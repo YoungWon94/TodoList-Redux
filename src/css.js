@@ -5,7 +5,7 @@ export const TodoItem_box={
 
 export const TodoItem_redFont={
     color : "red",
-    "text-decoration" : "line-through",
+    textDecoration : "line-through",
 }
 
 export const TodoItem_balckFont={

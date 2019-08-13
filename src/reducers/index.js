@@ -28,9 +28,10 @@ const modifyReducer = (state=initalState, action)=>{
            
            copyState = state.todos; //////2
             console.log(copyState);
-            
+            const id = (copyState.length-1 < 0)? 0 : copyState[copyState.length-1].id+1;
+
             todo = {
-                id : copyState[copyState.length-1].id+1,
+                id : id,
                 text : action.text,
                 complete : action.complete,
             }
